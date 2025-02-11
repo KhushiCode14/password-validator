@@ -1,0 +1,94 @@
+/* Global Styles */
+body {
+  background-color: #f3f4f6; /* bg-gray-100 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Heading */
+h1 {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: bold;
+  color: #2563eb; /* text-blue-600 */
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+/* Label */
+label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151; /* text-gray-700 */
+  margin-bottom: 0.5rem;
+}
+
+/* Input Field */
+input {
+  width: 100%;
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  padding: 0.5rem;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #2563eb; /* focus:border-blue-500 */
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5); /* focus:ring-blue-500 */
+}
+
+/* Button */
+button {
+  width: 100%;
+  background-color: #3b82f6; /* bg-blue-500 */
+  color: white;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #2563eb; /* hover:bg-blue-600 */
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  /* gap: 0.25rem; */
+margin: 0;
+  /* margin-top: 0.0025rem; */
+}
+
+/* Grid Items */
+.grid-item {
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #fee2e2; /* bg-gray-100 */
+  font-weight: bold;
+  color: #991b1b;
+  transition: 0.2s;
+ 
+}
+
+/* Grid Item Colors */

@@ -3,43 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Styled Tailwind Page</title>
+
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-gray-100 flex justify-center items-center min-h-screen">
-    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
-      <h1 class="text-3xl font-bold text-blue-600 text-center mb-4 underline">
-        Hello world!
-      </h1>
+  <body>
+    <div class="container">
+      <h1>Password Generator</h1>
 
-      <label for="inputField" class="block text-gray-700 font-semibold mb-2">
-        Enter text:
-      </label>
-      <input
-        type="text"
-        id="inputField"
-        placeholder="Enter your text here"
-        class="w-full border border-gray-300 p-2 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
-      />
+      <form action="" id="formSubmit">
+        <label for="inputField">Enter text:</label>
+        <input type="text" id="inputField" placeholder="Enter your text here" />
 
-      <button
-        type="button"
-        class="w-full bg-blue-500 text-white mt-4 py-2 rounded-lg hover:bg-blue-600 transition-all"
-      >
-        Submit
-      </button>
-
-      <div class="mt-6 grid grid-cols-3 gap-3">
-        <p class="bg-blue-100 text-blue-700 text-center p-3 rounded-lg">1</p>
-        <p class="bg-green-100 text-green-700 text-center p-3 rounded-lg">2</p>
-        <p class="bg-yellow-100 text-yellow-700 text-center p-3 rounded-lg">
-          3
-        </p>
-        <p class="bg-red-100 text-red-700 text-center p-3 rounded-lg">4</p>
-        <p class="bg-purple-100 text-purple-700 text-center p-3 rounded-lg">
-          5
-        </p>
+        <button type="submit" id="submitButton">Submit</button>
+      </form>
+      <div class="grid-container">
+        <p class="grid-item" id="lowercase">Check the lowercase</p>
+        <p class="grid-item" id="uppercase">Check the uppercase</p>
+        <p class="grid-item" id="character">minimum 8 character length</p>
+        <!-- <p class="grid-item" id="lowercase">4</p> -->
+        <p class="grid-item" id="specialChar">special character</p>
+        <p class="grid-item" id="number">min 1 number add</p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
